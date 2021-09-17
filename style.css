@@ -18,16 +18,18 @@ body {
 }
 
 header {
-  width: 100%;
+  max-width: 100%;
   display: flex;
   height: 44px;
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  top: 0;
-  bottom: 0;
+  top: 10px;
   right: 0;
+  bottom: 0;
   left: 0;
+  padding: 10px;
+  margin: 10px;
 }
 
 .headline {
@@ -42,13 +44,13 @@ header {
   padding-top: 0;
 }
 
+.header-welcome {
+  margin: 24px;
+}
+
 .menu-container {
   display: block;
   width: 100%;
-}
-
-.header-welcome {
-  margin: 24px;
 }
 
 .some-image {
@@ -72,8 +74,11 @@ main {
   text-align: center;
   flex-direction: column;
   width: 84%;
-  margin: 58px 0;
-  margin-top: 24px;
+  margin-top: 164px;
+  top: 64px;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 
 h2 {
@@ -88,10 +93,12 @@ h2 {
   font-weight: 700;
   font-size: 40px;
   color: #172b4d;
+  margin-top: 74px;
 }
 
 .container-header h2 {
   color: #43b886;
+  margin-top: 0;
 }
 
 .pre-content {
@@ -99,7 +106,7 @@ h2 {
   font-size: 20px;
   text-align: center;
   color: #172b4d;
-  margin: 0 0 58px 0;
+  margin: 58px 0 58px 0;
 }
 
 ul,
