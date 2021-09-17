@@ -1,6 +1,6 @@
 ## My Portfolio Site
 
-![](MobileScreenshot.PNG)
+![](PortfolioImage.PNG)
 
 This project is from the microverse curriculum. The primary aim of this project is to ensure that students master the tools they will be using while submitting their project in the microverse program, tools like gitflow, linters, etc.
 
@@ -18,11 +18,10 @@ This project is from the microverse curriculum. The primary aim of this project 
 To get a local copy up and running in your machine:
 1. Clone this repo or download the zip folder:
 
-   ``git clone https://github.com/Tofcookies/MyPortfolio/tree/mobile-version``
+   ``git clone https://github.com/Tofcookies/MyPortfolio/tree/portfolio-mobile-version``
 2. Navigate to the location of the folder in your machine:
 
  **``you@your-Pc-name:~$ cd <folder>``**
-
 
 👤 **Author**
 
@@ -33,6 +32,10 @@ To get a local copy up and running in your machine:
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
+
+# Credit
+
+Hat tip to [Figma](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=1%3A468) for giving me this design.
 
 ## Show your support
 
