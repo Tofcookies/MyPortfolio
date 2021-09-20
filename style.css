@@ -196,6 +196,7 @@ li {
   align-content: end;
   color: #3a4a42;
   line-height: 16px;
+  float: left;
 }
 
 button {
