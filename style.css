@@ -426,3 +426,12 @@ textarea {
   color: #fff;
   margin: 0 0 24px 100px;
 }
+
+.click:active {
+  background-color: #36b37f;
+}
+
+.click:hover {
+background-color: #36b37f;
+}
+
