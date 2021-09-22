@@ -25,11 +25,14 @@ To get a local copy up and running in your machine:
 
 👤 **Author**
 
-- GitHub: [@githubhandle](https://github.com/Tofcookies)
+- GitHub: [@githubhandle](https://github.com/Tofcookies) 
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/oluwatofunmi-alugbin-a7aab9215/)
+  
+- GitHub: [@githubhandle](https://github.com/Lockless404)
 
 
 ## 🤝 Contributing
+
 
 Contributions, issues, and feature requests are welcome!
 
