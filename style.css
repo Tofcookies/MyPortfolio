@@ -16,6 +16,7 @@ body {
   line-height: 28px;
   background-color: #fff;
 }
+
 @media screen and (min-width: 992px) {
   body {
     width: 100%;
@@ -55,7 +56,7 @@ header {
 @media screen and (min-width: 992px) {
   .headline {
     background-image: url(images/Desktopimages/Header-llustration-desktop.svg);
-    background-size: 95%;
+    background-size: 100%;
     background-position-y: -1%;
     Width: 1472.8px;
     Height: 1434.3px;
@@ -117,7 +118,7 @@ main {
   align-items: center;
   text-align: center;
   width: 84%;
-  margin-top: 232px;
+  margin-top: 186px ;
   top: 64px;
 }
 
@@ -133,7 +134,7 @@ h2 {
   font-weight: 700;
   font-size: 40px;
   color: #172b4d;
-  margin-top: 74px;
+  margin: 74px 74px;
 }
 
 .container-header h2 {
@@ -146,7 +147,7 @@ h2 {
   font-size: 20px;
   text-align: center;
   color: #172b4d;
-  margin: 58px 0 58px 0;
+  margin: 24px 0 34px 0;
 }
 
 ul,
@@ -212,10 +213,7 @@ li {
   section.portfolio-section .portfolio-product {
     margin: 20px 0;
   }
-
-  /* watch here */
 }
-
 
 .portfolio-product {
   border: 1px solid #d0d9d4;
@@ -315,18 +313,16 @@ a:visited {
     margin: 0;
   }
 }
+
 @media screen and (min-width: 992px) {
-  .about-me {
-  justify-content: center;
-  align-items: center;
-  background-image: url(images/Desktopimages/illustration-about\ me-1-desktop.svg);
-  background-repeat: no-repeat;
-  background-position: right top;
-  position: relative;
-  color: #172b4d;
+.background-container {
+  background-image: url(images/Backgroundimage\(all\).png);
+  background-size: 100% 100%;
+  padding: 2%;
 }
 }
-.about-me-img {
+
+.background-container .background-container.about-me-img {
   background-image: url(images/illustration\ 1-\ about\ me-mobile.svg); 
   background-repeat: no-repeat;
   background-position: left top;
@@ -337,32 +333,13 @@ a:visited {
   left: 0;
 }
 
-/*.about-me .about-me-img {
-  justify-content: center;
-  align-items: center;
-  background-image: url(images/illustration\ 1-\ about\ me-mobile.svg);
-  background-repeat: no-repeat;
-  background-position: right top;
-  position: relative;
-  color: #172b4d;
-}
-
-.about-me.about-me-mobile-img {
-  background-image: url(images/illustration\ 2-about\ me\ mobile\ \(1\).svg);
-  background-repeat: no-repeat;
-  background-position: left top;
-  position: relative;
-  bottom: 0;
-  left: 0;
-}*/
-
 h3 {
   font-size: 24px;
   font-weight: 600;
   margin-top: 16px;
 }
 
-.about-me > h3 {
+.background-container .about-me > h3 {
   font-size: 40px;
   line-height: 52px;
   text-align: center;
@@ -370,18 +347,22 @@ h3 {
   margin-top: 68px;
 }
 
-.about-me > p {
+.background-container .about-me > p {
   font-size: 20px;
   line-height: 32px;
   text-align: center;
+  align-self: center;
   margin-bottom: 36px;
 }
 
-.about-me .description {
+.background-container .about-me .description {
   color: #42526e;
 }
 
-.resume-btn {
+.background-container .resume-btn {
+  width: 159px;
+  height: 48px;
+  align-self: center;
   margin-top: 24px;
   padding: 12px;
   background-color: #36b37f;
@@ -391,7 +372,7 @@ h3 {
   justify-content: center;
 }
 
-.resume-btn:hover {
+.background-container .resume-btn:hover {
   background-color: #43b886;
 }
 
@@ -444,7 +425,6 @@ h3 {
   border-radius: 5px;
   align-content: end;
 }
-
 
 @media screen and (min-width: 992px) {
   section.work {
@@ -519,7 +499,7 @@ h3 {
 
    header {
     position: relative;
-    left: 500px;
+    left: 600px;
     top: 0;
   }
 }
@@ -590,6 +570,19 @@ textarea {
   margin-bottom: 24px;
 }
 
+@media screen and (min-width: 992px) {
+.click {
+  width: 129px;
+  height: 48px;
+  background-color: #36b37f;
+  transition: width 2s linear 2s;
+}
+}
+
+.click:hover {
+ background-color: #3a4a42;
+}
+
 .form-page {
   display: flex;
   flex-direction: column;
@@ -602,10 +595,11 @@ textarea {
 }
 
 .footer-icons {
+  border-top: 1px solid #DFE1E6;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 240px;
+  margin-bottom: 0px;
 }
 
 .social-media-icons {
@@ -623,3 +617,4 @@ textarea {
 .footer-icons .footer-email {
   color: #42526e;
 }
+
