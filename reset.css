@@ -82,17 +82,17 @@ header {
   }
 }
 
-.menu-container {
-  display: block;
-  width: 100%;
-}
+  .menu-container {
+    display: block;
+    width: 100%;
+  }
 
-.some-image {
-  width: 100%;
-  display: inline-block;
-}
+  .some-image {
+    width: 100%;
+    display: inline-block;
+  }
 
-.action {
+  .action {
   width: 60px;
   height: 60px;
   object-fit: cover;
@@ -199,7 +199,7 @@ section.portfolio-section {
 }
 
 @media screen and (min-width: 992px) {
-  .portfolio-section {
+section.portfolio-section {
     grid-template-columns: repeat(3, auto);
     margin: auto 0;
     max-width: 100%;
@@ -210,7 +210,7 @@ section.portfolio-section {
     display: none;
   }
 
-  .portfolio-section .portfolio-product {
+  section.portfolio-section .portfolio-product {
     margin: 20px 0;
   }
 }
@@ -252,14 +252,13 @@ section.portfolio-section {
 .portfolio-li {
   padding: 8px 12px;
   font-weight: 600;
-  font-size: 12px;  
+  font-size: 12px;
   background-color: #ebf0ee;
   border-radius: 5px;
   align-content: end;
   color: #3a4a42;
   line-height: 16px;
-  float: right;
-  
+  float: left;
 }
 
 button {
@@ -317,14 +316,14 @@ a:visited {
 
 @media screen and (min-width: 992px) {
   section.background-container {
-    background-image: url(images/BackgroundImages/Backgroundimage.png);
+    background-image: url(images/Backgroundimage\(all\).png);
     background-size: 100% 100%;
     padding: 2%;
   }
 }
 
 section.background-container .background-container.about-me-img {
-  background-image: url(images/illustration\ 1-\ about\ me-mobile.svg);
+  background-image: url(images/illustration\ 1-\ about\ me-mobile.svg); 
   background-repeat: no-repeat;
   background-position: left top;
   position: absolute;
@@ -460,9 +459,9 @@ h3 {
   }
 
   .d-none {
-    display: none;
+  display: none;
   }
-
+  
   .desktop-nav {
     display: flex;
     flex-direction: row;
@@ -496,7 +495,7 @@ h3 {
     text-decoration: none;
   }
 
-  header {
+   header {
     position: relative;
     left: 600px;
     top: 0;
@@ -570,16 +569,16 @@ textarea {
 }
 
 @media screen and (min-width: 992px) {
-  .click {
-    width: 129px;
-    height: 48px;
-    background-color: #36b37f;
-    transition: width 2s linear 2s;
+.click {
+  width: 129px;
+  height: 48px;
+  background-color: #36b37f;
+  transition: width 2s linear 2s;
   }
 }
 
 .click:hover {
-  background-color: #3a4a42;
+ background-color: #3a4a42;
 }
 
 .form-page {
@@ -594,11 +593,11 @@ textarea {
 }
 
 .footer-icons {
-  border-top: 1px solid #dfe1e6;
+  border-top: 1px solid #DFE1E6;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 0;
+  margin-bottom: 0px;
 }
 
 .footer-icons .social-media-icons {
