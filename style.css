@@ -425,7 +425,7 @@ h3 {
 }
 
 @media screen and (min-width: 992px) {
-  section.work {
+  .work {
     display: flex;
     max-width: 100%;
     align-items: center;
