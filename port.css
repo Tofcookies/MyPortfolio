@@ -17,77 +17,65 @@ body {
   background-color: #fff;
 }
 
-@media screen and (min-width: 992px) {
-  body {
-    width: 100%;
-    height: 100%;
-  }
-}
-
 header {
+  width: 100%;
+  display: flex;
   height: 44px;
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  top: 10px;
-  right: 0;
+  top: 0;
   bottom: 0;
+  right: 0;
   left: 0;
-  margin: 5px;
-}
-
-.d-flex {
-  display: flex;
-}
-
-.d-flex-col {
-  flex-direction: column;
 }
 
 .headline {
   background-image: url(images/Header-illustration.svg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-position: center center;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   padding: 64px 24px;
   padding-top: 0;
 }
 
 @media screen and (min-width: 992px) {
-  section.headline {
-    background-image: url(images/Desktopimages/Header-llustration-desktop.svg);
-    background-size: 100%;
-    background-position-y: -1%;
-    width: 1472.8px;
-    height: 1434.3px;
-    top: -398px;
-    left: 27px;
-    z-index: -20;
+  .headline {
+    background-image: url(images/Header-llustration-desktop.svg);
+    background-size: cover;
   }
 
-  .header-top {
-    margin-top: -53px;
+  .margin-top {
+    margin-top: 0;
   }
 
-  .container-header {
+  header {
+
+  }
+
+  .header-container {
     max-width: 50%;
   }
 
-  .pre-content {
-    max-width: 50%;
+  .primary-content {
+    max-width: 65%;
   }
 
-  section.recent-works {
-    margin-top: -413px;
+  .task {
+    margin-top: 600px;
   }
 }
 
-.menu-container {
+
+.image-container {
   display: block;
   width: 100%;
 }
 
-.some-image {
+.all-image {
   width: 100%;
   display: inline-block;
 }
@@ -98,7 +86,7 @@ header {
   object-fit: cover;
 }
 
-.header-welcome {
+.welcome-container {
   margin-left: 24px;
 }
 
@@ -114,12 +102,14 @@ main {
   margin-top: 44px;
 }
 
-.container-header {
+.header-container {
+  display: flex;
   align-items: center;
   text-align: center;
+  flex-direction: column;
   width: 84%;
-  margin-top: 0;
-  top: 64px;
+  margin: 58px 0;
+  margin-top: 24px;
 }
 
 h2 {
@@ -128,26 +118,24 @@ h2 {
   margin-top: 16px;
 }
 
-.container-header h1,
-.container-header h2 {
+.header-container h1,
+.header-container h2 {
   line-height: 52px;
   font-weight: 700;
   font-size: 40px;
   color: #172b4d;
-  margin: 74px 74px;
 }
 
-.container-header h2 {
+.header-container h2 {
   color: #43b886;
-  margin-top: 0;
 }
 
-.pre-content {
+.primary-content {
   width: 84%;
   font-size: 20px;
   text-align: center;
   color: #172b4d;
-  margin: 24px 0 34px 0;
+  margin: 0 0 58px 0;
 }
 
 ul,
@@ -157,9 +145,11 @@ li {
   margin: 0;
 }
 
-.arrow-btn {
+.chevron-btn {
   width: 84%;
+  display: flex;
   align-items: center;
+  flex-direction: column;
   margin-top: 64px;
 }
 
@@ -171,26 +161,15 @@ li {
   color: #172b4d;
 }
 
-.text h4 {
-  display: block;
-}
-
-.social-media-icons {
-  display: flex;
-  justify-content: space-between;
-  height: 20px;
-  width: 43.26%;
-  padding-left: 10px;
-}
-
-.indicator-image {
+.an-image {
   width: 48px;
   height: 48px;
+  display: flex;
   margin: 0 auto;
   border-radius: 24px;
 }
 
-section.portfolio-section {
+.portfolio-sect {
   padding: 16px;
   display: grid;
   justify-content: center;
@@ -199,23 +178,21 @@ section.portfolio-section {
 }
 
 @media screen and (min-width: 992px) {
-  .portfolio-section {
+  section.portfolio-sect {
     grid-template-columns: repeat(3, auto);
     margin: auto 0;
     max-width: 100%;
     gap: 24px;
   }
 
-  .indicator-image {
-    display: none;
-  }
-
-  .portfolio-section .portfolio-product {
+  section.portfolio-sect .portfolio-item {
     margin: 20px 0;
   }
+
+  /* watch here */
 }
 
-.portfolio-product {
+.portfolio-item {
   border: 1px solid #d0d9d4;
   border-radius: 8px;
   width: 367px;
@@ -231,6 +208,7 @@ section.portfolio-section {
 
 .portfolio-ul {
   padding: 0;
+  display: flex;
   text-align: center;
   list-style-type: none;
   justify-content: space-between;
@@ -238,14 +216,16 @@ section.portfolio-section {
   gap: 12px;
 }
 
-.portfolio-elements {
+.portfolio-details {
+  display: flex;
+  flex-direction: column;
   border-radius: inherit;
   padding: 30px 12px;
   justify-content: center;
   align-items: center;
 }
 
-.portfolio-elements h2 {
+.portfolio-details h2 {
   color: #3a4a42;
 }
 
@@ -258,7 +238,6 @@ section.portfolio-section {
   align-content: end;
   color: #3a4a42;
   line-height: 16px;
-  float: right;
 }
 
 button {
@@ -269,7 +248,7 @@ button {
   cursor: pointer;
 }
 
-.portfolio-button {
+.portfolio-btn {
   width: 122px;
   height: 48px;
   margin-top: 24px;
@@ -284,12 +263,12 @@ a:visited {
   color: #fff;
 }
 
-.portfolio-button:hover {
+.portfolio-btn:hover {
   background-color: #36b37f;
   box-shadow: 0 8px 16px rgb(54, 181, 128, 0.24);
 }
 
-.portfolio-button:active {
+.portfolio-btn:active {
   background-color: #008552;
 }
 
@@ -314,19 +293,22 @@ a:visited {
   }
 }
 
-@media screen and (min-width: 992px) {
-  section.background-container {
-    background-image: url(images/BackgroundImages/Backgroundimage.png);
-    background-size: 100% 100%;
-    padding: 2%;
-  }
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(images/illustration-about\ me-1-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  position: relative;
+  color: #172b4d;
 }
 
-section.background-container .background-container.about-me-img {
-  background-image: url(images/illustration\ 1-\ about\ me-mobile.svg);
+.about-me .about-me-img {
+  position: absolute;
   background-repeat: no-repeat;
   background-position: left top;
-  position: absolute;
   bottom: 0;
   left: 0;
 }
@@ -337,7 +319,7 @@ h3 {
   margin-top: 16px;
 }
 
-.background-container .about-me > h3 {
+.about-me > h3 {
   font-size: 40px;
   line-height: 52px;
   text-align: center;
@@ -345,22 +327,19 @@ h3 {
   margin-top: 68px;
 }
 
-.background-container .about-me > p {
+.about-me > p {
   font-size: 20px;
   line-height: 32px;
   text-align: center;
-  align-self: center;
   margin-bottom: 36px;
 }
 
-.background-container .about-me .description {
+.about-me .description {
   color: #42526e;
 }
 
-.background-container .resume-btn {
-  width: 159px;
-  height: 48px;
-  align-self: center;
+.resume-btn {
+  display: flex;
   margin-top: 24px;
   padding: 12px;
   background-color: #36b37f;
@@ -368,10 +347,6 @@ h3 {
   border-radius: 5px;
   border: 1px solid #36b37f;
   justify-content: center;
-}
-
-.background-container .resume-btn:hover {
-  background-color: #43b886;
 }
 
 .portfolio-lang {
@@ -383,6 +358,8 @@ h3 {
 }
 
 .portfolio-globe {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   background-color: #ebf0ee;
   width: 100%;
@@ -394,6 +371,7 @@ h3 {
 .globe-img {
   width: 80px;
   height: 80px;
+  display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 40px;
@@ -404,6 +382,7 @@ h3 {
 }
 
 .globe-ul {
+  display: flex;
   flex-flow: row wrap;
   text-align: center;
   list-style-type: none;
@@ -413,6 +392,15 @@ h3 {
   padding: 0 30px;
   gap: 12px;
   color: #36b37f;
+}
+
+.globe-details {
+  display: flex;
+  flex-direction: column;
+  border-radius: inherit;
+  padding: 30px 12px;
+  justify-content: center;
+  align-items: center;
 }
 
 .globe-li {
@@ -497,8 +485,6 @@ h3 {
 
   header {
     position: relative;
-    left: 600px;
-    top: 0;
   }
 }
 
@@ -568,19 +554,6 @@ textarea {
   margin-bottom: 24px;
 }
 
-@media screen and (min-width: 992px) {
-  .click {
-    width: 129px;
-    height: 48px;
-    background-color: #36b37f;
-    transition: width 2s linear 2s;
-  }
-}
-
-.click:hover {
-  background-color: #3a4a42;
-}
-
 .form-page {
   display: flex;
   flex-direction: column;
@@ -593,11 +566,19 @@ textarea {
 }
 
 .footer-icons {
-  border-top: 1px solid #dfe1e6;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 0;
+  margin-bottom: 240px;
+}
+
+.social-media-icons {
+  background-repeat: no-repeat no-repeat;
+  background-position: right top;
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+  width: 43.26%;
 }
 
 .footer-icons .social-media-icons {
