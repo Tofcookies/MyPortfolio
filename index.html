@@ -227,10 +227,11 @@
         <h3 class="duty">I'm always interested in hearing about new projects, so if you'd like to chat please get in
           touch.
         </h3>
-        <form class="form-page">
-          <input class="fullname" type="text" id="name" name="name" placeholder="full name">
-          <input class="email" type="email" id="email" name="email" placeholder="123@gmail.com" />
-          <textarea name="text">Enter text here</textarea>
+        <form class="form-page" action="https://formspree.io/f/xqkwjkyy" method="POST">
+          <input class="Fullname" type="text" id="name" name="name" minlength="1" maxlength="30" placeholder="full name"
+            required>
+          <input class="email" type="email" id="email" name="email" placeholder="123@gmail.com" required />
+          <textarea name="text" maxlength="500" required>Enter text here</textarea>
           <button class="click" type="submit">Get in touch</button>
         </form>
       </section>

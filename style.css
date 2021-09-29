@@ -252,14 +252,13 @@ section.portfolio-section {
 .portfolio-li {
   padding: 8px 12px;
   font-weight: 600;
-  font-size: 12px;  
+  font-size: 12px;
   background-color: #ebf0ee;
   border-radius: 5px;
   align-content: end;
   color: #3a4a42;
   line-height: 16px;
   float: right;
-  
 }
 
 button {
