@@ -44,6 +44,10 @@ header {
   flex-direction: column;
 }
 
+.d-grid {
+  display: grid;
+}
+
 .headline {
   background-image: url(images/Header-illustration.svg);
   background-repeat: no-repeat;
@@ -58,7 +62,7 @@ header {
     background-image: url(images/Desktopimages/Header-llustration-desktop.svg);
     background-size: 100%;
     background-position-y: -1%;
-    width: 1472.8px;
+    width: 90%;
     height: 1434.3px;
     top: -398px;
     left: 27px;
@@ -78,7 +82,7 @@ header {
   }
 
   section.recent-works {
-    margin-top: -413px;
+    margin-top: 144px;
   }
 }
 
@@ -118,7 +122,7 @@ main {
   align-items: center;
   text-align: center;
   width: 84%;
-  margin-top: 0;
+  margin-top: 186px;
   top: 64px;
 }
 
@@ -134,12 +138,12 @@ h2 {
   font-weight: 700;
   font-size: 40px;
   color: #172b4d;
-  margin: 74px 74px;
+  margin: 186px 21px 0;
 }
 
 .container-header h2 {
   color: #43b886;
-  margin-top: 0;
+  margin: 24px 0 24px 0;
 }
 
 .pre-content {
@@ -190,28 +194,16 @@ li {
   border-radius: 24px;
 }
 
-section.portfolio-section {
-  padding: 16px;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-}
-
 @media screen and (min-width: 992px) {
   .portfolio-section {
-    grid-template-columns: repeat(3, auto);
-    margin: auto 0;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
     max-width: 100%;
     gap: 24px;
   }
 
   .indicator-image {
     display: none;
-  }
-
-  .portfolio-section .portfolio-product {
-    margin: 20px 0;
   }
 }
 
@@ -315,14 +307,14 @@ a:visited {
 }
 
 @media screen and (min-width: 992px) {
-  section.background-container {
+  .background-container {
     background-image: url(images/BackgroundImages/Backgroundimage.png);
     background-size: 100% 100%;
     padding: 2%;
   }
 }
 
-section.background-container .background-container.about-me-img {
+.background-container .background-container.about-me-img {
   background-image: url(images/illustration\ 1-\ about\ me-mobile.svg);
   background-repeat: no-repeat;
   background-position: left top;
@@ -497,7 +489,7 @@ h3 {
 
   header {
     position: relative;
-    left: 600px;
+    left: 900px;
     top: 0;
   }
 }
