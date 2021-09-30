@@ -44,10 +44,6 @@ header {
   flex-direction: column;
 }
 
-.d-grid {
-  display: grid;
-}
-
 .headline {
   background-image: url(images/Header-illustration.svg);
   background-repeat: no-repeat;
@@ -62,7 +58,7 @@ header {
     background-image: url(images/Desktopimages/Header-llustration-desktop.svg);
     background-size: 100%;
     background-position-y: -1%;
-    width: 90%;
+    width: 1472.8px;
     height: 1434.3px;
     top: -398px;
     left: 27px;
@@ -82,21 +78,21 @@ header {
   }
 
   section.recent-works {
-    margin-top: 144px;
+    margin-top: -413px;
   }
 }
 
-.menu-container {
-  display: block;
-  width: 100%;
-}
+  .menu-container {
+    display: block;
+    width: 100%;
+  }
 
-.some-image {
-  width: 100%;
-  display: inline-block;
-}
+  .some-image {
+    width: 100%;
+    display: inline-block;
+  }
 
-.action {
+  .action {
   width: 60px;
   height: 60px;
   object-fit: cover;
@@ -138,12 +134,12 @@ h2 {
   font-weight: 700;
   font-size: 40px;
   color: #172b4d;
-  margin:  186px 21px 0;
+  margin: 74px 74px;
 }
 
 .container-header h2 {
   color: #43b886;
-  margin: 24px 0 24px 0;
+  margin-top: 0;
 }
 
 .pre-content {
@@ -194,16 +190,28 @@ li {
   border-radius: 24px;
 }
 
+section.portfolio-section {
+  padding: 16px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
 @media screen and (min-width: 992px) {
-  .portfolio-section {
-    grid-template-columns: auto auto auto;
-    justify-content: center;
+section.portfolio-section {
+    grid-template-columns: repeat(3, auto);
+    margin: auto 0;
     max-width: 100%;
     gap: 24px;
   }
 
   .indicator-image {
     display: none;
+  }
+
+  section.portfolio-section .portfolio-product {
+    margin: 20px 0;
   }
 }
 
@@ -250,7 +258,7 @@ li {
   align-content: end;
   color: #3a4a42;
   line-height: 16px;
-  float: right;
+  float: left;
 }
 
 button {
@@ -307,15 +315,15 @@ a:visited {
 }
 
 @media screen and (min-width: 992px) {
-  .background-container {
-    background-image: url(images/BackgroundImages/Backgroundimage.png);
+  section.background-container {
+    background-image: url(images/Backgroundimage\(all\).png);
     background-size: 100% 100%;
     padding: 2%;
   }
 }
 
-.background-container .background-container.about-me-img {
-  background-image: url(images/illustration\ 1-\ about\ me-mobile.svg);
+section.background-container .background-container.about-me-img {
+  background-image: url(images/illustration\ 1-\ about\ me-mobile.svg); 
   background-repeat: no-repeat;
   background-position: left top;
   position: absolute;
@@ -451,9 +459,9 @@ h3 {
   }
 
   .d-none {
-    display: none;
+  display: none;
   }
-
+  
   .desktop-nav {
     display: flex;
     flex-direction: row;
@@ -487,9 +495,9 @@ h3 {
     text-decoration: none;
   }
 
-  header {
+   header {
     position: relative;
-    left: 900px;
+    left: 600px;
     top: 0;
   }
 }
@@ -561,16 +569,16 @@ textarea {
 }
 
 @media screen and (min-width: 992px) {
-  .click {
-    width: 129px;
-    height: 48px;
-    background-color: #36b37f;
-    transition: width 2s linear 2s;
+.click {
+  width: 129px;
+  height: 48px;
+  background-color: #36b37f;
+  transition: width 2s linear 2s;
   }
 }
 
 .click:hover {
-  background-color: #3a4a42;
+ background-color: #3a4a42;
 }
 
 .form-page {
@@ -589,7 +597,7 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 0;
+  margin-bottom: 0px;
 }
 
 .footer-icons .social-media-icons {
