@@ -132,6 +132,16 @@ li {
   color: #172b4d;
 }
 
+.text:hover {
+  animation-name: h4-text;
+  animation-duration: 4s;
+}
+
+@keyframes h4-text {
+  from { color: #172b4d; } 
+  to { color: #ffc9ff}
+}
+
 .social-media-logos {
   justify-content: space-between;
   height: 20px;
