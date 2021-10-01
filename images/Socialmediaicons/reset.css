@@ -21,7 +21,7 @@ body {
   body {
     width: 100%;
     height: 100%;
-  }
+  } 
 
   section.headline {
     background-image: url(images/Desktopimages/Header-llustration-desktop.svg);
@@ -33,166 +33,17 @@ body {
     left: 27px;
     z-index: -20;
   }
-
-  .header-top {
-    margin-top: -53px;
-  }
-
-  .container-header {
-    max-width: 50%;
-  }
-
-  .container-header h1 {
-    animation: example;
-    animation-duration: 4s;
-  }
-
-  @keyframes example {
-    from { background-color: #172b4d; }
-    to { background-color: #008552; }
-  }
-
-  .pre-content {
-    max-width: 50%;
-  }
-
-  section.recent-works {
-    margin-top: -413px;
-  }
-
-  .portfolio-section {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    justify-content: center;
-    align-items: center;
-    margin: auto 0;
-    max-width: 100%;
-    gap: 24px;
-  }
-
-  .indicator-image {
-    display: none;
-  }
-
-  .portfolio-section .portfolio-product {
-    margin: 20px 0;
-  }
-
-  section.about-sect {
-    padding-bottom: 12px;
-  }
-
-  section.about-sect p {
-    max-width: 773px;
-  }
-
-  section.about-sect .portfolio-lang-box {
-    display: flex;
-    gap: 24px;
-    margin: 52px 0;
-    justify-content: center;
-  }
-
-  section.about-sect .portfolio-lang {
-    margin: 0;
-  }
-
-  .background-container {
-    background-image: url(images/BackgroundImages/Backgroundimage.png);
-    background-size: 100% 100%;
-    padding: 2%;
-  }
-
-  section.work {
-    display: flex;
-    max-width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 95px;
-    gap: 24px;
-    margin: 100px 12px;
-  }
-
-  section.work .duty {
-    width: 60%;
-    font-weight: 500;
-    text-align: left;
-  }
-
-  .form-page {
-    width: 50%;
-  }
-
-  .form-page input,
-  .form-page textarea {
-    width: 100%;
-  }
-
-  .form-page button {
-    align-self: flex-start;
-  }
-
-  .social-media-icons {
-    max-width: 12.5%;
-  }
-
-  .d-none {
-    display: none;
-  }
-
-  .desktop-nav {
-    display: flex;
-    flex-direction: row;
-    height: 40px;
-    width: 300px;
-    align-items: center;
-    margin-top: 12px;
-    justify-content: space-between;
-  }
-
-  .desktop-nav .nav-link {
-    display: flex;
-    align-items: center;
-    gap: 32px;
-    justify-content: space-between;
-    margin: auto;
-  }
-
-  .desktop-nav .nav-link .nav-links {
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 20px;
-    align-items: center;
-    text-align: center;
-    color: #344563;
-    margin: 0 auto;
-  }
-
-  .desktop-nav ul li a {
-    text-decoration: none;
-  }
-
-  header {
-    position: relative;
-  }
-
-  .click {
-    width: 129px;
-    height: 48px;
-    background-color: #36b37f;
-    transition: width 2s linear 2s;
-  }
 }
 
 header {
   height: 44px;
   justify-content: space-between;
   align-items: center;
-  top: -2px;
+  position: fixed;
+  top: 10px;
   right: 0;
   bottom: 0;
-  left: 225px;
+  left: 0;
   margin: 5px;
 }
 
@@ -213,6 +64,41 @@ header {
   padding-top: 0;
 }
 
+@media screen and (min-width: 992px) {
+ 
+  }
+
+  .header-top {
+    margin-top: -53px;
+  }
+
+  .container-header {
+    max-width: 50%;
+  }
+
+  .container-header h1 {
+    animation: example;
+    animation-duration: 4s;
+  }
+
+@keyframes example {
+  from {background-color: #172b4d;}
+  to {background-color: #008552;}
+}
+
+ section.about-sect {
+    padding-bottom: 12px;
+  }
+
+  .pre-content {
+    max-width: 50%;
+  }
+
+  section.recent-works {
+    margin-top: -413px;
+  }
+}
+
 .menu-container {
   display: block;
   width: 100%;
@@ -220,6 +106,7 @@ header {
 
 .some-image {
   width: 100%;
+  display: inline-block;
 }
 
 .action {
@@ -234,6 +121,10 @@ header {
 
 nav {
   margin-right: 35px;
+}
+
+.desktop-nav {
+  display: none;
 }
 
 main {
@@ -287,7 +178,7 @@ li {
 }
 
 .arrow-btn {
-  width: 50px;
+  width: 84%;
   align-items: center;
   margin-top: 64px;
 }
@@ -325,6 +216,26 @@ section.portfolio-section {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 992px) {
+  .portfolio-section {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    align-items: center;
+    margin: auto 0;
+    max-width: 100%;
+    gap: 24px;
+  }
+
+  .indicator-image {
+    display: none;
+  }
+
+  .portfolio-section .portfolio-product {
+    margin: 20px 0;
+  }
 }
 
 .portfolio-product {
@@ -403,6 +314,35 @@ a:visited {
 
 .portfolio-button:active {
   background-color: #008552;
+}
+
+@media screen and (min-width: 992px) {
+  section.about-sect {
+    padding-bottom: 12px;
+  }
+
+  section.about-sect p {
+    max-width: 773px;
+  }
+
+  section.about-sect .portfolio-lang-box {
+    display: flex;
+    gap: 24px;
+    margin: 52px 0;
+    justify-content: center;
+  }
+
+  section.about-sect .portfolio-lang {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .background-container {
+    background-image: url(images/BackgroundImages/Backgroundimage.png);
+    background-size: 100% 100%;
+    padding: 2%;
+  }
 }
 
 .background-container .background-container.about-me-img {
@@ -507,6 +447,84 @@ h3 {
   align-content: end;
 }
 
+@media screen and (min-width: 992px) {
+  section.work {
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 95px;
+    gap: 24px;
+    margin: 100px 12px;
+  }
+
+  section.work .duty {
+    width: 60%;
+    font-weight: 500;
+    text-align: left;
+  }
+
+  .form-page {
+    width: 50%;
+  }
+
+  .form-page input,
+  .form-page textarea {
+    width: 100%;
+  }
+
+  .form-page button {
+    align-self: flex-start;
+  }
+
+  .social-media-icons {
+    max-width: 12.5%;
+  }
+
+  .d-none {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    width: 300px;
+    align-items: center;
+    margin-top: 12px;
+    justify-content: space-between;
+  }
+
+  .desktop-nav .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    justify-content: space-between;
+    margin: auto;
+  }
+
+  .desktop-nav .nav-link .nav-links {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+    color: #344563;
+    margin: 0 auto;
+  }
+
+  .desktop-nav ul li a {
+    text-decoration: none;
+  }
+
+  header {
+    position: relative;
+    left: 350px;
+    top: 0;
+  }
+}
+
 .work {
   display: block;
   color: #172b4d;
@@ -571,6 +589,15 @@ textarea {
   border-radius: 4px;
   color: #fff;
   margin-bottom: 24px;
+}
+
+@media screen and (min-width: 992px) {
+  .click {
+    width: 129px;
+    height: 48px;
+    background-color: #36b37f;
+    transition: width 2s linear 2s;
+  }
 }
 
 .click:hover {
