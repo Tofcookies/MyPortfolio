@@ -72,9 +72,9 @@
           </a>
         </li>
       </ul>
-      <div class="arrow-btn action d-flex d-flex-col">
+      <a class="arrow-btn action d-flex d-flex-col" href="#">
         <img class="some-image action" src="images/Action.svg" alt="arrow down image">
-      </div>
+      </a>
     </section>
     <section class="recent-works">
       <div class="text">
@@ -228,10 +228,11 @@
         <h3 class="duty">I'm always interested in hearing about new projects, so if you'd like to chat please get in
           touch.
         </h3>
-        <form class="form-page">
-          <input class="fullname" type="text" id="name" name="name" placeholder="Tofcookies">
-          <input class="email" type="email" id="email" name="email" placeholder="123@gmail.com" />
-          <textarea name="text">Enter text here</textarea>
+        <form class="form-page" action="https://formspree.io/f/xpzknpng" method="POST">
+          <input class="fullname" type="text" id="name" name="name" minlength="1" maxlength="30" placeholder="Full name"
+            required>
+          <input class="email" type="email" id="email" name="email" maxlength="30" placeholder="Enter Email" required />
+          <textarea name="text" maxlength="500" required>Enter text here</textarea>
           <button class="click" type="submit">Get in touch</button>
         </form>
       </section>
