@@ -175,8 +175,6 @@ body {
 
   header {
     position: relative;
-    left: 350px;
-    top: 0;
   }
 
   .click {
@@ -191,11 +189,10 @@ header {
   height: 44px;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
-  top: 10px;
+  top: -2px;
   right: 0;
   bottom: 0;
-  left: 0;
+  left: 225px;
   margin: 5px;
 }
 
@@ -223,7 +220,6 @@ header {
 
 .some-image {
   width: 100%;
-  display: inline-block;
 }
 
 .action {
@@ -238,10 +234,6 @@ header {
 
 nav {
   margin-right: 35px;
-}
-
-.desktop-nav {
-  display: none;
 }
 
 main {
